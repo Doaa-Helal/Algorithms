@@ -1,3 +1,6 @@
+### Part 1
+
+* * * * *
 1.  Write all required algorithms needed to sort a sequence of numbers using Heapsort Algorithms. Heap-sort requires two main operations: build a max heap and repeatedly extracting the largest element from the heap (the root). Build a max heap from the input array.
 
     -   For each element in the array (starting from the end):
