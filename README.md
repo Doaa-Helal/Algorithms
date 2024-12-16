@@ -50,8 +50,8 @@
 
     | **Function** | **Operation** | **Complexity** |
     | --- | --- | --- |
-    | HEAP-SORT(A) | Sort array using heap | O(n log⁡ n) |
-    | BUILD-MAX-HEAP(A) | Build a max heap | O(n) |
+    | HEAP-SORT(A) | Sort array using heap | O( (n log⁡ n)+((n-1)(log n)) |
+    | BUILD-MAX-HEAP(A) | Build a max heap | O(n log n) |
     | MAX-HEAPIFY(A, i) | Maintain max-heap property for a subtree | O(log⁡ n) |
 
     ```
@@ -86,7 +86,7 @@
         for i = A.length downto 2: ->n
             swap A[1] and A[i]     ->n-1
             A.heap_size = A.heap_size - 1  ->n-1
-            MAX-HEAPIFY(A, 1)
+            MAX-HEAPIFY(A, 1)       ->(n-1)log(n)
 
     ```
 
